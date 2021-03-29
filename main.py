@@ -520,7 +520,6 @@ class Rectangle:
 o1 = Rectangle(2,6)
 o1.computRec()
 
-"""
 # 4
 class person:
     def __init__(s,fname,lname):
@@ -557,4 +556,88 @@ class Contact(person,Adress):
 obj = Contact("","","","","")
 
 
+# Activity
+class Person:
+    def __init__(s,F_name,L_name):
+        s.F_name = F_name
+        s.L_name = L_name
 
+    def getinfo(x):
+        x.F_name = input("Enter your fist name\n")
+        x.L_name = input("Enter your last name\n")
+
+class student(Person):
+    def __init__(r,F_name,L_name,ID):
+        Person.__init__(F_name,L_name)
+        r.ID = ID
+
+    def getid(y):
+        y.ID = input("Enter your ID\n")
+
+    def printinfo(self):
+        return Person(),student()
+
+o1 = Person("Ru","Ad")
+o2 = student("Ru","Ad","381")
+
+o1.getinfo()
+o2.getid()
+print(o2.printinfo())
+""
+
+class person():
+
+"""
+#last lab
+
+class person:
+
+    def __init__(self, n , e):
+
+        self.name = n
+
+        self.email = e
+
+
+
+    def printPinfo(x):
+
+        print("name:",x.name)
+
+        print("Email:",x.email)
+
+
+class Adress:
+
+    def __init__(self,c,s):
+
+        self.city = c
+
+        self.street = s
+
+    def printAddress(x):
+
+        print("city:",x.city)
+
+        print("street:",x.street)
+
+
+class contact(person,Adress):
+
+    def __init__(self,n,e,c,s):
+
+        person.__init__(self,n,e)
+
+        Adress.__init__(self,c,s)
+
+    def printinfo(x):
+
+        person.printPinfo(x)
+
+        Adress.printAddress(x)
+
+
+
+P = contact("Ruba","rubadel98@gmail.com","buraydah","Omar")
+
+P.printinfo()
